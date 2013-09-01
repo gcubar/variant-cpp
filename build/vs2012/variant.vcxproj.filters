@@ -1,0 +1,135 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Archivos de código fuente">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Archivos de encabezado">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Archivos de recursos">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="third_party">
+      <UniqueIdentifier>{37b4f89e-4370-45a5-b85b-7da174e8d74b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="third_party\googletest">
+      <UniqueIdentifier>{8bb63b1b-550e-451c-a949-fb0b7ce8a479}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="third_party\googletest\src">
+      <UniqueIdentifier>{ea41a932-ba55-49c0-a577-26b3f3528d13}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="third_party\googletest\include">
+      <UniqueIdentifier>{9ac30e82-345a-4bab-a6a1-11770bb2b72c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="third_party\googletest\include\gtest">
+      <UniqueIdentifier>{31c1657e-ec83-4572-a7cf-d42539587885}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="third_party\googletest\include\gtest\internal">
+      <UniqueIdentifier>{3c5a7b2a-5ae5-479f-a917-50fe84b11696}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\include\tr1.h">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\variant.h">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\third_party\googletest\src\gtest-internal-inl.h">
+      <Filter>third_party\googletest\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\third_party\googletest\include\gtest\gtest.h">
+      <Filter>third_party\googletest\include\gtest</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\third_party\googletest\include\gtest\gtest_pred_impl.h">
+      <Filter>third_party\googletest\include\gtest</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\third_party\googletest\include\gtest\gtest_prod.h">
+      <Filter>third_party\googletest\include\gtest</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\third_party\googletest\include\gtest\gtest-death-test.h">
+      <Filter>third_party\googletest\include\gtest</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\third_party\googletest\include\gtest\gtest-message.h">
+      <Filter>third_party\googletest\include\gtest</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\third_party\googletest\include\gtest\gtest-param-test.h">
+      <Filter>third_party\googletest\include\gtest</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\third_party\googletest\include\gtest\gtest-printers.h">
+      <Filter>third_party\googletest\include\gtest</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\third_party\googletest\include\gtest\gtest-spi.h">
+      <Filter>third_party\googletest\include\gtest</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\third_party\googletest\include\gtest\gtest-test-part.h">
+      <Filter>third_party\googletest\include\gtest</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\third_party\googletest\include\gtest\gtest-typed-test.h">
+      <Filter>third_party\googletest\include\gtest</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\third_party\googletest\include\gtest\internal\gtest-death-test-internal.h">
+      <Filter>third_party\googletest\include\gtest\internal</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\third_party\googletest\include\gtest\internal\gtest-filepath.h">
+      <Filter>third_party\googletest\include\gtest\internal</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\third_party\googletest\include\gtest\internal\gtest-internal.h">
+      <Filter>third_party\googletest\include\gtest\internal</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\third_party\googletest\include\gtest\internal\gtest-linked_ptr.h">
+      <Filter>third_party\googletest\include\gtest\internal</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\third_party\googletest\include\gtest\internal\gtest-param-util.h">
+      <Filter>third_party\googletest\include\gtest\internal</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\third_party\googletest\include\gtest\internal\gtest-param-util-generated.h">
+      <Filter>third_party\googletest\include\gtest\internal</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\third_party\googletest\include\gtest\internal\gtest-port.h">
+      <Filter>third_party\googletest\include\gtest\internal</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\third_party\googletest\include\gtest\internal\gtest-string.h">
+      <Filter>third_party\googletest\include\gtest\internal</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\third_party\googletest\include\gtest\internal\gtest-tuple.h">
+      <Filter>third_party\googletest\include\gtest\internal</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\third_party\googletest\include\gtest\internal\gtest-type-util.h">
+      <Filter>third_party\googletest\include\gtest\internal</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\src\main.cpp">
+      <Filter>Archivos de código fuente</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\third_party\googletest\src\gtest-death-test.cc">
+      <Filter>third_party\googletest\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\third_party\googletest\src\gtest-filepath.cc">
+      <Filter>third_party\googletest\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\third_party\googletest\src\gtest-port.cc">
+      <Filter>third_party\googletest\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\third_party\googletest\src\gtest-printers.cc">
+      <Filter>third_party\googletest\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\third_party\googletest\src\gtest-test-part.cc">
+      <Filter>third_party\googletest\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\third_party\googletest\src\gtest-typed-test.cc">
+      <Filter>third_party\googletest\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\third_party\googletest\src\gtest.cc">
+      <Filter>third_party\googletest\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\third_party\googletest\src\gtest_main.cc">
+      <Filter>third_party\googletest\src</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>
