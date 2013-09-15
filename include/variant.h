@@ -334,7 +334,11 @@ struct base_object
             if (type_info() == typeid(int))
             {
                 int i = *to_ptr<int>();
-                if (typeid(T) == typeid(double))
+                if (typeid(T) == typeid(unsigned int))
+                {
+                    result = (unsigned int) i;
+                }
+                else if (typeid(T) == typeid(double))
                 {
                     result = (double) i;
                 }
@@ -352,10 +356,39 @@ struct base_object
                     result = *str;
                 }
             }
+            else if (type_info() == typeid(unsigned int))
+            {
+                unsigned int ui = *to_ptr<unsigned int>();
+                if (typeid(T) == typeid(int))
+                {
+                    result = (int) ui;
+                }
+                else if (typeid(T) == typeid(double))
+                {
+                    result = (double) ui;
+                }
+                else if (typeid(T) == typeid(float))
+                {
+                    result = (float) ui;
+                }
+                else if (typeid(T) == typeid(bool))
+                {
+                    result = bool(ui != 0);
+                }
+                else if (typeid(T) == typeid(std::string))
+                {
+                    std::string *str = new std::string(to_str(ui));
+                    result = *str;
+                }
+            }
             else if (type_info() == typeid(float))
             {
                 float f = *to_ptr<float>();
-                if (typeid(T) == typeid(int))
+                if (typeid(T) == typeid(unsigned int))
+                {
+                    result = (unsigned int) f;
+                }
+                else if (typeid(T) == typeid(int))
                 {
                     result = (int) f;
                 }
@@ -376,7 +409,11 @@ struct base_object
             else if (type_info() == typeid(double))
             {
                 double d = *to_ptr<double>();
-                if (typeid(T) == typeid(int))
+                if (typeid(T) == typeid(unsigned int))
+                {
+                    result = (unsigned int) d;
+                }
+                else if (typeid(T) == typeid(int))
                 {
                     result = (int) d;
                 }
@@ -397,7 +434,11 @@ struct base_object
             else if (type_info() == typeid(bool))
             {
                 bool b = *to_ptr<bool>();
-                if (typeid(T) == typeid(int))
+                if (typeid(T) == typeid(unsigned int))
+                {
+                    result = (unsigned int) (b ? 1 : 0);
+                }
+                else if (typeid(T) == typeid(int))
                 {
                     result = (int) (b ? 1 : 0);
                 }
@@ -427,7 +468,11 @@ struct base_object
                     s = *to_ptr<cstring>();
                 }
 
-                if (typeid(T) == typeid(int))
+                if (typeid(T) == typeid(unsigned int))
+                {
+                    result = (unsigned int) atoi(s.c_str());
+                }
+                else if (typeid(T) == typeid(int))
                 {
                     result = atoi(s.c_str());
                 }

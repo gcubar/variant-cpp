@@ -21,12 +21,16 @@ TEST(VariantTest, Integer)
     bool        tr5 = vValue;
     std::string tr6 = vValue;
 
+    unsigned int tr7 = vValue;
+
     EXPECT_EQ       (iValue,    tr1);
     EXPECT_EQ       (iValue,    tr2);
     EXPECT_EQ       (101.0f,    tr3);
     EXPECT_EQ       (101.0f,    tr4);
     EXPECT_EQ       (true,      tr5);
     EXPECT_STREQ    ("101",     tr6.c_str());
+
+    EXPECT_EQ       (iValue,    tr7);
 }
 
 // number tests (float)
@@ -71,6 +75,7 @@ TEST(VariantTest, Double)
     EXPECT_STREQ    ("3.1415",  tr6.c_str());
 }
 
+// boolean tests
 TEST(VariantTest, Boolean)
 {
     bool bValue = true;
@@ -91,6 +96,7 @@ TEST(VariantTest, Boolean)
     EXPECT_STREQ    ("true",    tr6.c_str());
 }
 
+// string tests
 TEST(VariantTest, Strings)
 {
     std::string sValue = std::string("3.1415");
@@ -111,6 +117,7 @@ TEST(VariantTest, Strings)
     EXPECT_EQ       (false,     tr6);
 }
 
+// classes tests
 TEST(VariantTest, CustomClass)
 {
     struct S
@@ -147,6 +154,7 @@ TEST(VariantTest, CustomClass)
     delete pS;
 }
 
+// assign operation tests
 TEST(VariantTest, MultipleAssigns)
 {
     int iValue = 101;
@@ -171,6 +179,7 @@ TEST(VariantTest, MultipleAssigns)
     EXPECT_STREQ    (cCurrent,  cValue);
 }
 
+// comparisons tests
 TEST(VariantTest, Comparisons)
 {
     int iValue = 101;
